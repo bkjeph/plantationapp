@@ -1,0 +1,63 @@
+{% extends "__base.html" %}
+{% block container %}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Plant Details #{{plant.id}}</h5>
+    </div>
+    <div class="card-body">
+    <dl class="row">
+      <dt class="col-sm-3">Plant Name</dt>
+      <dd class="col-sm-9">{{ plant.name }}</dd>
+      <dt class="col-sm-3">Usage</dt>
+      <dd class="col-sm-9">{{ plant.usage }}</dd>
+        <dt class="col-sm-3">Pruning</dt>
+      <dd class="col-sm-9">{{ plant.pruning }}</dd>
+      <dt class="col-sm-3">Pest Management</dt>
+      <dd class="col-sm-9">{{ plant.pest_management }}</dd>
+          <dt class="col-sm-3">fertiliser</dt>
+      <dd class="col-sm-9">{{ plant.fertiliser }}</dd>
+      <dt class="col-sm-3">water_requirement</dt>
+      <dd class="col-sm-9">{{ plant.water_requirement }}</dd>
+        <dt class="col-sm-3">sunlight</dt>
+      <dd class="col-sm-9">{{ plant.sunlight }}</dd>
+      <dt class="col-sm-3">humidity</dt>
+      <dd class="col-sm-9">{{ plant.humidity }}</dd>
+        <dt class="col-sm-3">temperature</dt>
+      <dd class="col-sm-9">{{ plant.temperature }}</dd>
+      <dt class="col-sm-3">effect_on_wild_life</dt>
+      <dd class="col-sm-9">{{ plant.effect_on_wild_life }}</dd>
+          <dt class="col-sm-3">effect_on_microclimate</dt>
+      <dd class="col-sm-9">{{ plant.effect_on_microclimate }}</dd>
+      <dt class="col-sm-3">effect_on_soil</dt>
+      <dd class="col-sm-9">{{ plant.effect_on_soil }}</dd>
+        <dt class="col-sm-3">average_height</dt>
+      <dd class="col-sm-9">{{ plant.average_height}}</dd>
+      <dt class="col-sm-3">canopy_density</dt>
+      <dd class="col-sm-9">{{ plant.canopy_density }}</dd>
+        <dt class="col-sm-3">canopy_radius</dt>
+      <dd class="col-sm-9">{{ plant.canopy_radius }}</dd>
+      <dt class="col-sm-3">root_structure</dt>
+      <dd class="col-sm-9">{{ plant.root_structure }}</dd>
+          <dt class="col-sm-3">harvesting_method</dt>
+      <dd class="col-sm-9">{{ plant.harvesting_method }}</dd>
+      <dt class="col-sm-3">post_harvest_care</dt>
+      <dd class="col-sm-9">{{ plant.post_harvest_care }}</dd>
+        <dt class="col-sm-3">nutrition_requirements</dt>
+      <dd class="col-sm-9">{{ plant.nutrition_requirements }}</dd>
+      <dt class="col-sm-3">soil_type</dt>
+      <dd class="col-sm-9">{{ plant.soil_type }}</dd>
+        <dt class="col-sm-3">sprouting_conditions</dt>
+      <dd class="col-sm-9">{{ plant.sprouting_conditions }}</dd>
+      <dt class="col-sm-3">planting_method</dt>
+      <dd class="col-sm-9">{{ plant.planting_method }}</dd>
+        <dt class="col-sm-3">distance_between_plats</dt>
+      <dd class="col-sm-9">{{ plant.distance_between_plats }}</dd>
+    </dl>
+
+    </div>
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,35 @@
+{% extends "__base.html" %}
+
+
+{% block container %}
+
+<form method='GET'>
+  <input type='text' name='q' value='{{ request.GET.q }}'>
+  <input class="button" type='submit' value="Search Plant">
+</form>
+
+{% if plants %}
+<table class="table">
+    <tr>
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for plant in plants %}
+            <tr>
+                <td>{{plant.name}}</td>
+                <td>{{plant.usage}}</td>
+                <td><a href='/plant/detail/{{plant.id}}'>details</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</table>
+{% endif %}
+
+
+{% endblock %}
+
+

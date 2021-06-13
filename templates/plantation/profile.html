@@ -1,0 +1,34 @@
+
+
+{% extends "__base.html" %}
+
+
+{% block container %}
+
+<table class="table">
+  <tr><h2 class="subtitle is-size-3">
+          Welcome {{ request.user.username }}
+        </h2>
+</tr>
+    <tr>
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for plant in plants %}
+            <tr>
+                <td>{{plant.name}}</td>
+                <td>{{plant.usage}}</td>
+                <td><a href='{{plant.id}}'>details</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</table>
+
+
+{% endblock %}
+
+
